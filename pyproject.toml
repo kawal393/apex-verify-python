@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apex-verify"
+version = "1.0.0"
+description = "APEX PSI SDK - Cryptographic verification for Python"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "APEX PSI", email = "contact@sovereign-ai.services"}]
+keywords = ["apex-psi", "cryptographic-verification", "truth-infrastructure", "sha256", "ed25519"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.urls]
+Homepage = "https://sovereign-ai.services"
+Documentation = "https://sovereign-ai.services/mcp"
+Repository = "https://github.com/apex-psi/sdk-python"
+
+[tool.setuptools]
+packages = ["apex_verify"]
